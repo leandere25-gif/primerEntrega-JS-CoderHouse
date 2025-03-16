@@ -1,0 +1,113 @@
+body{
+    background-color: rgba(243, 242, 240, 0.817);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(237, 233, 227, 0.817);
+    border: 1px solid rgba(241, 225, 204, 0.817);
+}
+
+h1{
+    font-size: 5em;
+    text-align: center;
+    color: rgb(101, 97, 34);
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    /* gap: 3px; */
+    
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #010101;
+    display: flex;
+    position: relative;
+    }
+
+.tarjeta{
+    position: absolute;
+    right: 40px;
+    bottom: 5px;
+    z-index: 10;
+}
+
+
+    .carrito-container{
+        width: 50%;
+        height: 500px;
+        border: 1px solid black;
+        display: flex;
+
+    }
+
+    button{
+        height: 40px;
+        border: 1px solid rgb(136, 131, 131);
+        position: relative;
+        z-index: 100;
+        pointer-events: auto;
+    }
+    button:active{
+        background-color: #010101;
+        color: red;
+    }
+
+    .price{
+    font-size: 1.6em;
+    }
+    .product-name{
+        font-size:1.2em;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+        height: 20px;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    .section-compra{
+        width: 50%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .compra-container{
+        height: 200px;
+        margin-top: 20px;
+        border: 2px solid black;
+        display: block;
+        width: 200px;
+        justify-items: center;
+        align-content: center;
+    }
+
+
+
+    .total{
+        height: 25px;
+        margin: 5px
+    }
+
+    .comprar{
+        margin-left: 50px;
+    }
