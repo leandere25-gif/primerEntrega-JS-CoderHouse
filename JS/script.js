@@ -1,6 +1,3 @@
-//ENVIO GRATIS EN COMPRAS SUPERIORES A $x
-//CUPON DE DESCUENTO CON ALGUNA PALABRA CLAVE
-
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
@@ -59,7 +56,6 @@ function actualizarTabla() {
 
 function actualizarTotal() {
     let total = 0;
-    let cupon = 'olorrico';
 
     carrito.forEach(producto => {
         total += producto.precio * producto.cantidad;
