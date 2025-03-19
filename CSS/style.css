@@ -111,3 +111,8 @@ h1{
     .comprar{
         margin-left: 50px;
     }
+
+    img{
+        height: 300px;
+        width: 300px;
+    }
